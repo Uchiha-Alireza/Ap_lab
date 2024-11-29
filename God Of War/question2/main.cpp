@@ -10,7 +10,7 @@ int main() {
         if (std::cin.fail() || size <= 0) {
             throw std::invalid_argument("Invalid input for size.");
         }
-        Vector<int> vec(size);
+        vector<int> vec(size);
         std::cout << "Vector created with size: " << vec.Size() << " and capacity: " << vec.Capacity() << std::endl;
         vec.push_back(10);
         std::cout << "After push_back, size: " << vec.Size() << ", back: " << vec.back() << std::endl;
@@ -25,7 +25,7 @@ int main() {
             std::cout << "Caught exception: " << e.what() << std::endl;
         }
         std::cout << "Accessing element at index 0: " << vec[0] << std::endl;
-        Vector<int> vec2(4, 7);
+        vector<int> vec2(4, 7);
         vec += vec2;
         std::cout << "After concatenation, size: " << vec.Size() << std::endl;
         vec.clear();

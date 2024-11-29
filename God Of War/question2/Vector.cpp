@@ -3,7 +3,6 @@
 #include <stdexcept>
 #include <exception>
 #include "Exception.h"
-namespace Alireza{
 	template <typename T>
 	vector<T>::vector() :size(0), capacity(10) {
 		try {
@@ -324,4 +323,3 @@ namespace Alireza{
 		}
 		return *this;
 	}
-}

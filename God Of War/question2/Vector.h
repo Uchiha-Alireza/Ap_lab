@@ -1,5 +1,5 @@
 #pragma once
-namespace Alireza {
+
 	template <typename T>
 	class vector {
 	private:
@@ -36,4 +36,3 @@ namespace Alireza {
 		vector& operator++(int);
 		vector& operator+=(const vector<T>& other);
 	};
-}
